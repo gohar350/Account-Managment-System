@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Admins</h1>
+
+<div id="admins">
+  <% @admins.each do |admin| %>
+    <%= render admin %>
+    <p>
+   <!-- <%= link_to "Show this admin", admin %>-->
+    </p>
+  <% end %>
+</div>
+
+  <%= button_to "New Headline", new_am_path , :method => "get" %><br><br>
+  <%= button_to "Add Employ", new_employ_path, :method => "get" %><br><br>
+  <%= button_to "New product", new_product_path, :method => "get" %><br><br>
+
+

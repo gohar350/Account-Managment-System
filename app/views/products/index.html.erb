@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Products</h1>
+
+<div id="products">
+  <% @products.each do |product| %>
+    <%= render product %>
+    <p>
+          <%= button_to "Show this product", :method => "get" %><br><br>
+
+    </p>
+  <% end %>
+</div>
+
+

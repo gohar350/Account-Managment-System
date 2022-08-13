@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+    <%= button_to "Admins Login", admins_path, :method => "get" %>
+    <%= button_to "Employs", employs_path, :method => "get" %>
+
+<h1>Shelbies Logistics</h1>
+
+<div id="ams">
+  <% @ams.each do |am| %>
+    <%= render am %>
+  <% end %>
+</div>
+
+
